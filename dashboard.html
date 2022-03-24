@@ -88,9 +88,59 @@
       <div class="col-lg-6 col-md-8 mx-auto">
         <h1 class="fw-light">Portal GII Dago</h1>
         <p class="lead text-muted">Something short and leading about the collection below—its contents, the creator, etc. Make it short and sweet, but not too short so folks don’t simply skip over it entirely.</p>
+        <p>
+          <a href="#" class="btn btn-secondary my-2">Cara Memesan Tiket</a>
+          <br/>
+          <button class="btn btn-primary my-2" data-bs-toggle="modal" data-bs-target="#tiketModal">Melihat Tiket Pesanan</button>
+        </p>
+
       </div>
     </div>
   </section>
+  <!-- Modal -->
+  <div class="modal fade text-dark" id="tiketModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Tiket Anda</h5>
+          <button onclick="clearCanvas()" type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="container-fluid">
+            <div class="card">
+              <div class="card-header">
+                Kebaktian Doa Pagi
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Sabtu, 26 Maret 2022 - 06:00 WIB</h5>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">Jemaat 1 - <b>A100</b></li>
+                <li class="list-group-item">Jemaat 2 - <b>A102</b></li>
+                <li class="list-group-item">Jemaat 3 - <b>A104</b></li>
+              </ul>
+            </div>
+            <hr/>
+            <div class="card">
+              <div class="card-header">
+                Kebaktian Umum
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Minggu, 27 Maret 2022 - 10:00 WIB</h5>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">Jemaat 1 - <b>B100</b></li>
+                <li class="list-group-item">Jemaat 2 - <b>B102</b></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
   <div class="album py-5 gii-body text-light">
     <div class="container">
 
